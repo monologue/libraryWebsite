@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta name="description" content="Tools in the sharing library Bad Rappenau"/>
+  <meta name="author" content="Regina" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Werkzeug in Bad Rappenau</title>
+</head>
+<body>
+	<table class="items">
+		<tr>
+			<th>Werkzeug</th>
+			<th>Ort</th>
+		</tr>
+		
+		<% for(var i=0; i<items.length; i++) {%>
+			<tr>
+			<td> <span><%= items[i].werkzeug %></span> </td>
+			<td> <span><%= items[i].ort %></span> </td>
+			</tr>
+		<% } %>
+	
+	<form action="/item" method="POST">
+		<input type="text" placeholder="Werkzeug" name="werkzeug">
+		<input type="text" placeholder="Ort" name="ort">
+		<button type="submit">Senden</button>
+	</form>
+
+</body>
+</head>

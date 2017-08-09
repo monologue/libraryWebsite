@@ -11,7 +11,7 @@
 
     <div id="ItemTree">
     <h1>Teilendes Bad Rappenau</h1>
-    <a  href="Werkzeug.ejs">
+    <a  href="Werkzeug.html">
         <div id="Werkzeug">
             Werkzeug
         </div>
@@ -36,19 +36,8 @@
         </div>
     </a>
     </div>
-	<ul class="gegenstands">
-	<% for(var i=0; i<gegenstands.length; i++){ %>
-		<li class="gegenstand">
-			<span> <%= gegenstands[i].name %> </span> 
-			<span> <%= gegenstands[i].beschreibung %> </span>
-		</li>
-	<% } %>
-	</ul>
 
-	<form action="/gegenstands" method="POST">
-	  <input type="text" placeholder="name" name="name">
-	  <input type="text" placeholder="beschreibung" name="beschreibung">
-	  <button type="submit">Submit</button>
-	</form>
+	
+
 </body>
 </html>

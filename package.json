@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/monologue/libraryWebsite#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

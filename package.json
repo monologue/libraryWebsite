@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/monologue/libraryWebsite#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "path": "^0.12.7"
   },

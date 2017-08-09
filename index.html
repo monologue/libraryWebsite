@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta name="description" content="Index for the miscellaneous library in Bad Rappenau"/>
+  <meta name="author" content="Regina" />
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Teilendes Bad Rappenau</title>
+</head>
+<body>
+
+    <div id="ItemTree">
+    <h1>Teilendes Bad Rappenau</h1>
+    <a  href="Werkzeug.ejs">
+        <div id="Werkzeug">
+            Werkzeug
+        </div>
+    </a>
+     <a  href="Basteln.ejs">
+        <div id="Basteln">
+            Bastelzeug
+        </div>
+    </a>
+     <a  href="Party.ejs">
+        <div id="Party">
+        </div>
+    </a>
+     <a  href="Zeit.ejs">
+        <div id="Zeit">
+            Zeit
+        </div>
+    </a>
+     <a  href="Sonstiges">
+			<div id="Sonstiges">     
+				Sonstiges   
+        </div>
+    </a>
+    </div>
+	<ul class="gegenstands">
+	<% for(var i=0; i<gegenstands.length; i++){ %>
+		<li class="gegenstand">
+			<span> <%= gegenstands[i].name %> </span> 
+			<span> <%= gegenstands[i].beschreibung %> </span>
+		</li>
+	<% } %>
+	</ul>
+
+	<form action="/gegenstands" method="POST">
+	  <input type="text" placeholder="name" name="name">
+	  <input type="text" placeholder="beschreibung" name="beschreibung">
+	  <button type="submit">Submit</button>
+	</form>
+</body>
+</html>
